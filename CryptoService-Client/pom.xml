@@ -20,7 +20,7 @@
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-core</artifactId>
-        <version>4.1.4.RELEASE</version>
+        <version>4.3.19.RELEASE</version>
     </dependency>
      
     <!-- Jackson JSON Processor -->
@@ -32,6 +32,11 @@
              
   </dependencies>
   <build>
+      <resources>
+        <resource>
+            <directory>src/resources</directory>
+        </resource>
+    </resources>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
     <plugin>

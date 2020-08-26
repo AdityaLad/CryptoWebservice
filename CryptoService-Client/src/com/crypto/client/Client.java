@@ -8,8 +8,8 @@ import com.crypto.pojo.Response;
 public class Client {
     
     private static final String KEYSTORE_PASSWORD = "password";
-    private static final String URI_ENCRYPT = "https://localhost:8443/encrypt";
-    private static final String URI_DECRYPT = "https://localhost:8443/decrypt";
+    private static final String URI_ENCRYPT = "http://localhost:8080/encrypt";
+    private static final String URI_DECRYPT = "http://localhost:8080/decrypt";
     
     static {
         System.setProperty("javax.net.ssl.trustStore", Client.class.getClassLoader().getResource("clienttruststore.p12").getFile());
